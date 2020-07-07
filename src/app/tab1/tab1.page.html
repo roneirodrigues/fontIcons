@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Awesom Icons
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item>
+      Direct import <fa-icon [icon]="faAngry" slot="end"></fa-icon>
+    </ion-item>
+    <ion-item>
+      Big <fa-icon [icon]="['fas','graduation-cap']" size="4x" slot="end"></fa-icon>
+    </ion-item>
+
+    <ion-item>
+      Rotate <fa-icon icon="graduation-cap" rotate="90" slot="end"></fa-icon>
+    </ion-item>
+
+
+    <ion-item>
+      Spin <fa-icon icon="graduation-cap" [spin]="true" slot="end"></fa-icon>
+    </ion-item>
+
+    <ion-item>
+      Pulse <fa-icon icon="spinner" [pulse]="true" slot="end"></fa-icon>
+    </ion-item>
+
+    <ion-item>
+      Normal <fa-icon icon="user-graduate" size="2x" slot="end"></fa-icon>
+      <i class="fab fa-grav"></i>
+    </ion-item>
+
+    <ion-item>
+      Animation with toggle <fa-icon icon="sync" [spin]="isSyncAnimated" (click)="isSyncAnimated=!isSyncAnimated"
+        slot="end"></fa-icon>
+    </ion-item>
+
+    <ion-item>
+      With badge 
+      <fa-layers class="fa-fw" slot="end">
+        <fa-icon [icon]="['fas','shopping-cart']"></fa-icon>
+        <fa-layers-counter [content]="46" class="fa-icon-counter"></fa-layers-counter>
+      </fa-layers>
+    </ion-item>
+
+<ion-button expand="full">
+  <fa-icon icon="coffee" pull="left"></fa-icon>
+  My left icon Button
+</ion-button>
+
+<ion-button expand="full">
+  <fa-icon icon="coffee" slot="end" pull="right"></fa-icon>
+  My Right icon Button
+</ion-button>
+
+<ion-button expand="full">
+  <fa-icon [icon]="['fab','angular']" slot="end"></fa-icon>
+</ion-button>
+
+<ion-button expand="full">
+  <fa-icon icon="/assets/icon/dumbbell-solid.svg" slot="end"></fa-icon>
+</ion-button>
+
+  </ion-list>
+</ion-content>
