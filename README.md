@@ -1,4 +1,4 @@
-# fontIcons
+# Ionic FontIcons
 Ionic Font Icons
 # Ionic Info
 Ionic:
